@@ -5,12 +5,12 @@ module WrapSteps
   end
 
   step 'I register a personalized account' do 
-    @username = register_personal_account
+    register_personal_account
   end
 
   step 'I am logged in as a registered user' do 
     visit('https://www.qa.wrapdev.net')
-    @username = register_personal_account
+    register_personal_account
   end
 
   step 'the registration process is successful' do
@@ -40,7 +40,7 @@ module WrapSteps
 
   step 'a wrap is created' do 
   end
-  
+
   step 'the wrap is available' do
   end
 

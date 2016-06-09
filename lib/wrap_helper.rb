@@ -59,5 +59,8 @@ module WrapHelper
     complete_wrap
   end
 
+  def publish_wrap
+  end
+
 end
 
