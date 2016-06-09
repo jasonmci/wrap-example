@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+gem 'capybara'
+gem 'turnip'
+gem 'rspec-core'
+gem 'pry'
+gem 'selenium-webdriver'
+gem 'faker'
+gem 'airborne'
