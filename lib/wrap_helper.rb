@@ -37,7 +37,6 @@ module WrapHelper
 
     email    = Faker::Internet.safe_email
     username = email.gsub(/[@\._]/, '_')
-    binding.pry
     click_link 'Sign Up', match: :first
 
     step_one(email)
