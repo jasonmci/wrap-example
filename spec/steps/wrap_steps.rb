@@ -30,20 +30,13 @@ module WrapSteps
     complete_wrap
   end
 
-  step 'I have a wrap' do
-    @wrap_name = create_a_wrap
-  end
-
-  step 'I publish a wrap' do
+  step 'I publish the wrap' do
     publish_wrap
   end
 
-  step 'a wrap is created' do 
+  step 'a wrap is published' do
+    expect(page).to have_content 'Show this Quick Tour every time I publish a Wrap'
   end
-
-  step 'the wrap is available' do
-  end
-
 end
 
 RSpec.configure { |c| c.include WrapSteps }

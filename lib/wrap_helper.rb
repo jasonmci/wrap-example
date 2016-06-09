@@ -47,18 +47,17 @@ module WrapHelper
   end
 
   def select_template 
+    find("img.template-categories_uploaded-image", match: :first).click
+    click_button 'Create Wrap', match: :first
   end
 
   def complete_wrap
-  end
-
-  def create_a_wrap
-    click_link 'CREATE'
-    select_template
-    complete_wrap
+    find("button.help-tour_nav--close").click
+    click_button 'Save'
   end
 
   def publish_wrap
+    click_button 'Publish'
   end
 
 end
